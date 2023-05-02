@@ -1,0 +1,11 @@
+@startuml 
+actor "Пользователь" as user
+actor "Система тестов" as system 
+participant "Обработка входных данных" as tests
+participant "Результаты" as results
+participant "Отчет" as report
+user --> system: входные данные
+user --> tests: входные данные приняты
+tests --> results: прохождение тестов
+results --> report: формирование отчета
+@enduml
