@@ -9,3 +9,9 @@ user --> tests: входные данные приняты
 tests --> results: прохождение тестов
 results --> report: формирование отчета
 @enduml
+
+@startuml
+node "Сеть" as netw
+node "Сервер тестирования" as server
+netw -- server
+@enduml
